@@ -1,0 +1,13 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+@using ProdocNET.Models
+@model IEnumerable<ProdocNET.Models.Document>
+<ul>
+    @foreach (Document doc in Model)
+    {
+        <li>
+            @doc.Title
+        </li>
+    }
+</ul>
